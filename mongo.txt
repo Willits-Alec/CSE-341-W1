@@ -1,0 +1,6 @@
+
+mongo_URI = mongodb+srv://alecwillits:5n0gbKtHpv0gt1sc@week1.1mmsrh9.mongodb.net/
+
+U: alecwillits
+
+P: 5n0gbKtHpv0gt1sc
