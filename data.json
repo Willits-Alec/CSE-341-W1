@@ -1,0 +1,27 @@
+[
+    {
+      "Email": "example@example.com",
+      "username": "example_username",
+      "name": "John Doe",
+      "ipaddress": "192.168.1.1"
+    },
+    {
+      "Email": "another@example.com",
+      "username": "another_username",
+      "name": "Jane Smith",
+      "ipaddress": "10.0.0.1"
+    },
+    {
+      "Email": "test@test.com",
+      "username": "test_user",
+      "name": "Alice Johnson",
+      "ipaddress": "172.16.0.1"
+    },
+    {
+      "Email": "example2@example.com",
+      "username": "example2_username",
+      "name": "Michael Brown",
+      "ipaddress": "192.168.0.100"
+    }
+  ]
+  
