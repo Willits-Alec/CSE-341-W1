@@ -15,6 +15,7 @@ exports.getUsers = async (req, res) => {
 
 // Method to get a single user by ID
 exports.getUserById = async (req, res) => {
+    //#swagger.tags=['Users']
     try {
         const userId = req.params.id;
         const user = await User.findById(userId);
@@ -29,6 +30,7 @@ exports.getUserById = async (req, res) => {
 
 // Method to create a new user
 exports.createUser = async (req, res) => {
+    //#swagger.tags=['Users']
     try {
         const { fname, lname, Email, color, bday } = req.body;
         const newUser = new User({ fname, lname, Email, color, bday });
@@ -41,6 +43,7 @@ exports.createUser = async (req, res) => {
 
 // Method to update a user by ID
 exports.updateUser = async (req, res) => {
+    //#swagger.tags=['Users']
     try {
         const userId = req.params.id;
         const { fname, lname, Email, color, bday } = req.body;
@@ -56,6 +59,7 @@ exports.updateUser = async (req, res) => {
 
 // Method to delete a user by ID
 exports.deleteUser = async (req, res) => {
+    //#swagger.tags=['Users']
     try {
         const userId = req.params.id;
         const deletedUser = await User.findByIdAndDelete(userId);
