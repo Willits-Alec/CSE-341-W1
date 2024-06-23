@@ -5,7 +5,7 @@
     "description": "API documentation",
     "version": "1.0.0"
   },
-  "host": "https://cse-341-w1.onrender.com",
+  "host": "cse-341-w1.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
