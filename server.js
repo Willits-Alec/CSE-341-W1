@@ -10,6 +10,10 @@ const app = express();
 dotenv.config();
 
 const port = process.env.PORT || 3000;
+
+// See if this helps with all routes
+app.use(cors())
+
 app.use(express.json());  // Middleware to parse JSON bodies
 app.use('/', require('./routes/routes'));
 
@@ -23,8 +27,7 @@ app.use((req, res, next) => {
     next();
 })
 
-// See if this helps with all routes
-app.use(cors())
+
 
 // Use Swagger-UI-express for your app documentation endpoint
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
