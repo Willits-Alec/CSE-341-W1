@@ -22,6 +22,8 @@ app.use((req, res, next) => {
     next();
 })
 
+// See if this helps with all routes
+app.use(cors())
 
 // Use Swagger-UI-express for your app documentation endpoint
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
